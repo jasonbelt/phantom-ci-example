@@ -27,7 +27,7 @@ val osateHome = Os.home / ".sireum" / "phantom" / "osate-2.9.2-vfinal" / "osate"
 val phantomArgs = "-nosplash -console -consoleLog -data @user.home/.sireum -application org.sireum.aadl.osate.cli"
 
 { // install osate plugins via phantom
-  //proc"${sireum.string} hamr phantom -u".at(home).console.runCheck()
+  proc"${sireum.string} hamr phantom -u".at(home).console.runCheck()
   assert(osateHome.exists, s"${osateHome} not found")
 }
 
